@@ -1,0 +1,24 @@
+{
+  "name": "@isaiahiroko/ng-aeon",
+  "keywords": ["Angular", "Web Storage", "Store", "LocalStorage", "SessionStorage", "IndexedDB", "Remote Store"],
+  "description": "A high level common API for web stores (LocalStorage, SessionStorage, IndexedDB, Remote Store (Restful API)",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/isaiahiroko/ng-aeon"
+  },
+  "author": {
+    "name": "Isaiah Iroko",
+    "email": "isaiahiroko@gmail.com"
+  },
+  "version": "0.0.0",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/cdk": "^7.3.1",
+    "dexie": "^2.0.1",
+    "moment": "^2.24.0",
+    "pluralize": "^7.0.0",
+    "ts-md5": "^1.2.4"
+  },
+  "license": "MIT"
+}
