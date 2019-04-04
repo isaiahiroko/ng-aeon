@@ -5,7 +5,9 @@
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "files": [
     "src/test.ts"

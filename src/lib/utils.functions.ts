@@ -5,7 +5,7 @@ import { UrlSegment, UrlSegmentGroup, Route } from '@angular/router'
 import { Observable } from 'rxjs'
 
 import { Md5 } from 'ts-md5/dist/md5'
-import * as pluralize from 'pluralize'
+import pluralize from 'pluralize'
 import * as moment from 'moment'
 
 export function time() {

@@ -289,50 +289,6 @@ export class ColumnFactory {
     ]
   }
 
-  // toTypeCards(config?: Object): Observable<CardContract[][]>{
-  //   const appConfig: Config = outject(Config)
-  //   let RemoteTableName = plural(this.tableName())
-  //   return forkJoin(...[...this.enumColumns().map((column) => {
-  //     return column.fullType
-  //       .replace("enum('", '')
-  //       .replace("')", '')
-  //       .split("','")
-  //       .map((value) => {
-  //         return value
-  //       })
-  //     }), ...[[RemoteTableName]]].map((typeGroup) => {
-  //       return forkJoin(...typeGroup.map((type) => {
-  //         return appConfig.select<string>('store.remote.urls.APIbase').pipe(
-  //           mergeMap((APIBase) => {
-  //             if(type == RemoteTableName){
-  //               return this.remote.aGet<number>(
-  //                 `${APIBase}/${RemoteTableName}?query=${encodeURIComponent(JSON.stringify([{ [QueryActions.count]: [] }]))}`
-  //               )
-  //             }
-  //             return this.remote.aGet<number>(
-  //               `${APIBase}/${RemoteTableName}?query=${encodeURIComponent(JSON.stringify([
-  //                 { [QueryActions.where]: ['type', '=', type] }, 
-  //                 { [QueryActions.count]: [] }
-  //               ]))}`
-  //             )
-  //           }),
-  //           map((count) => {
-  //             return <CardContract> {
-  //               title: 'Total ' + plural(type).toUpperCase(), 
-  //               bold: count,
-  //               actions: [{
-  //                 icon: 'arrow_forward',
-  //                 url : '/' + singular(RemoteTableName.toLowerCase()),
-  //                 queryParams: (type == RemoteTableName) ? {} : { query: encodeURIComponent(`type:=:${type}`) }
-  //               }]
-  //             }
-  //           })
-  //         )
-  //       }))
-  //     })
-  //   )
-  // }
-
   dbName(): string {
     return this._dbName.replace(/_/g, ' ')
   }

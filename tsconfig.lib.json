@@ -14,8 +14,10 @@
     "types": [],
     "lib": [
       "dom",
-      "es2015"
-    ]
+      "es2017"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
